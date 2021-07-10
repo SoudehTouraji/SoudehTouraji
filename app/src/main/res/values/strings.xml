@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">خودآموز مهارت</string>
+    <string name="slogan">مفیدترین آموزشها رو با ما تجربه کن!</string>
+
+    <string name="title_no_internet">اینترنت دستگاه قطع می باشد.</string>
+    <string name="description_no_internet">اپلیکیشن برای ادامه نیاز به اینترنت دارد. لطفا برای ادامه دستگاه را به اینترنت متصل نمائید.</string>
+    <string name="connect_to_data">اتصال به Data</string>
+    <string name="connect_to_wifi">اتصال به wifi</string>
+
+    <string name="login">ورود</string>
+    <string name="username">نام کاربری</string>
+    <string name="hint_username">ایمیل خود را وارد نمایید.</string>
+    <string name="password">کلمه عبور</string>
+    <string name="hint_password">کلمه عبور را وارد نمایید.</string>
+    <string name="create_account">ایجاد حساب کاربری</string>
+    <string name="forget_password">کلمه عبور را فراموش کرده ام!</string>
+
+
+    <string name="sign_Up">ثبت نام</string>
+    <string name="email">ایمیل</string>
+    <string name="confirm_password">تائید کلمه عبور</string>
+    <string name="hint_confirm_password">مجددا کلمه عبور را وارد نمایید.</string>
+
+    <string name="get_verification_code">دریافت رمز یکبار مصرف</string>
+
+    <string name="verify_code">تائید کد</string>
+    <string name="verification_code">کد تائیدیه</string>
+    <string name="hint_verification_code">کد تائیدیه را وارد نمائید.</string>
+
+</resources>
