@@ -2,10 +2,17 @@ package ir.SoudehTouraji.skilleducationstore.Activity.ForgetPassword.STP2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ir.SoudehTouraji.skilleducationstore.databinding.ActivityForgetPasswordVerifyEmailBinding
 
 class ForgetPasswordVerifyEmailActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityForgetPasswordVerifyEmailBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forget_password_verify_email)
+        defineBinding()
+
+    }
+    private fun defineBinding(){
+        binding=ActivityForgetPasswordVerifyEmailBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

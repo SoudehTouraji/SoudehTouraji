@@ -14,7 +14,6 @@ class SignUpActivity : BaseActivity() {
     private lateinit var password: String
     private lateinit var confirmPassword: String
     private lateinit var context: Context
-
     private val emailPattern: String = "[a-zA-Z0-9.-_]+@[a-z]+\\.+[a-z]+"
     private val securityPattern: String =
         "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~\$^+=<>]).{8,20}\$"
