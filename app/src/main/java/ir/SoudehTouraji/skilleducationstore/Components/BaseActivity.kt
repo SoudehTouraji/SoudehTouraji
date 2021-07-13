@@ -67,8 +67,8 @@ open class BaseActivity : AppCompatActivity() {
     fun setLogo(activity: Activity,){
 
     }
-    fun getIntent(context:Context ,cls: Class<*>?){
-        val intent = Intent(context, cls)
+    fun changActivity(cls: Class<*>?){
+        val intent = Intent(applicationContext, cls)
         startActivity(intent)
     }
 }

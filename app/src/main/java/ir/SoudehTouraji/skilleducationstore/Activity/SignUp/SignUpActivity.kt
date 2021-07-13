@@ -1,11 +1,9 @@
 package ir.SoudehTouraji.skilleducationstore.Activity.SignUp
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ir.SoudehTouraji.skilleducationstore.Components.BaseActivity
 import ir.SoudehTouraji.skilleducationstore.Dialog.NoInternet.NoInternetActivity
-import ir.SoudehTouraji.skilleducationstore.databinding.ActivityNoInternetBinding
 import ir.SoudehTouraji.skilleducationstore.databinding.ActivitySignUpBinding
 
 class SignUpActivity : BaseActivity() {
@@ -27,7 +25,7 @@ class SignUpActivity : BaseActivity() {
                 doSignUp()
             }else{
                 // network isn't connect
-                getIntent(context,NoInternetActivity::class.java)
+                changActivity(NoInternetActivity::class.java)
             }
 
         }

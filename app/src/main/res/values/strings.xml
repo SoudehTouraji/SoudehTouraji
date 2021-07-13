@@ -18,7 +18,7 @@
 
     <string name="sign_Up">ثبت نام</string>
     <string name="email">ایمیل</string>
-    <string name="confirm_password">تائید کلمه عبور</string>
+    <string name="confirm_password">ثبت کلمه عبور</string>
     <string name="hint_confirm_password">مجددا کلمه عبور را وارد نمایید.</string>
 
     <string name="get_verification_code">دریافت رمز یکبار مصرف</string>

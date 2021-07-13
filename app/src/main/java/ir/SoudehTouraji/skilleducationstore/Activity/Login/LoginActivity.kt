@@ -30,11 +30,11 @@ class LoginActivity : BaseActivity() {
                 sendRequest()
             } else {
                 //show no internet dialog
-                getIntent(context, NoInternetActivity::class.java)
+                changActivity(NoInternetActivity::class.java)
             }
         }
         binding.tvTitleSignup.setOnClickListener {
-            getIntent(context, SignUpActivity::class.java)
+            changActivity(SignUpActivity::class.java)
         }
     }
 

@@ -38,11 +38,11 @@ class SplashActivity : BaseActivity() {
         Handler().postDelayed({
             if (checkNetwork()) {
                 // go to login
-                getIntent(context, LoginActivity::class.java)
+                changActivity(LoginActivity::class.java)
                 finish()
             } else {
                 //show no internet dialog
-                getIntent(context,NoInternetActivity::class.java)
+                changActivity(NoInternetActivity::class.java)
             }
         }, TIME_OUT)
     }
