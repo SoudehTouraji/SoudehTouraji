@@ -27,4 +27,9 @@
     <string name="verification_code">کد تائیدیه</string>
     <string name="hint_verification_code">کد تائیدیه را وارد نمائید.</string>
 
+    <string name="profile">پروفایل</string>
+    <string name="shopping_basket">سبد خرید</string>
+    <string name="categories">دسته بندی ها</string>
+    <string name="home">خانه</string>
+
 </resources>
