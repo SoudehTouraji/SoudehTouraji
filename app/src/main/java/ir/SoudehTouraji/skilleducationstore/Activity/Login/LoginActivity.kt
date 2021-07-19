@@ -2,6 +2,7 @@ package ir.SoudehTouraji.skilleducationstore.Activity.Login
 
 import android.content.Context
 import android.os.Bundle
+import ir.SoudehTouraji.skilleducationstore.Activity.Main.MainActivity
 import ir.SoudehTouraji.skilleducationstore.Activity.SignUp.SignUpActivity
 import ir.SoudehTouraji.skilleducationstore.Components.BaseActivity
 import ir.SoudehTouraji.skilleducationstore.Dialog.NoInternet.NoInternetActivity
@@ -46,6 +47,7 @@ class LoginActivity : BaseActivity() {
             if (checkPassword()) {
                 // true you can send request to server
                 showToastLong("اطلاعات صحیح وارد شده است.")
+                changActivity(MainActivity::class.java)
             }
         }
     }

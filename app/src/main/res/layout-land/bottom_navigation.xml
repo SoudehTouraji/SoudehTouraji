@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:id="@+id/ll_profile"
-            android:background="@color/green_caribbean"
+            android:background="@color/yellow_light"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -23,8 +23,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_profile_yellow"
-                android:layout_marginTop="@dimen/padding_10dp">
+                android:src="@drawable/ic_profile_green"
+                android:layout_marginTop="@dimen/padding_3dp">
             </ImageView>
 
             <TextView
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="@dimen/font_13sp"
-                android:textColor="@color/yellow_light"
+                android:textColor="@color/green_caribbean"
                 android:text="@string/profile"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/padding_5dp">
@@ -44,7 +44,7 @@
 
         <LinearLayout
             android:id="@+id/ll_shopping_basket"
-            android:background="@color/green_caribbean"
+            android:background="@color/yellow_light"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -54,8 +54,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_shopping_basket_yellow"
-                android:layout_marginTop="@dimen/padding_10dp">
+                android:src="@drawable/ic_shopping_basket_green"
+                android:layout_marginTop="@dimen/padding_3dp">
             </ImageView>
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="@dimen/font_13sp"
-                android:textColor="@color/yellow_light"
+                android:textColor="@color/green_caribbean"
                 android:text="@string/shopping_basket"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/padding_5dp">
@@ -74,7 +74,7 @@
 
         <LinearLayout
             android:id="@+id/ll_categories"
-            android:background="@color/green_caribbean"
+            android:background="@color/yellow_light"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -85,8 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_category_yellow"
-                android:layout_marginTop="@dimen/padding_10dp">
+                android:src="@drawable/ic_category_green"
+                android:layout_marginTop="@dimen/padding_3dp">
             </ImageView>
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="@dimen/font_13sp"
-                android:textColor="@color/yellow_light"
+                android:textColor="@color/green_caribbean"
                 android:text="@string/categories"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/padding_5dp">
@@ -106,7 +106,7 @@
 
         <LinearLayout
             android:id="@+id/ll_home"
-            android:background="@color/green_caribbean"
+            android:background="@color/yellow_light"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -117,8 +117,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_yellow"
-                android:layout_marginTop="@dimen/padding_10dp">
+                android:src="@drawable/ic_home_green"
+                android:layout_marginTop="@dimen/padding_3dp">
             </ImageView>
 
             <TextView
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="@dimen/font_13sp"
-                android:textColor="@color/yellow_light"
+                android:textColor="@color/green_caribbean"
                 android:text="@string/home"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/padding_5dp">

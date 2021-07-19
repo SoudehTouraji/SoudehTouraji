@@ -4,6 +4,7 @@
     <dimen name="font_16sp">16sp</dimen>
     <dimen name="font_30sp">30sp</dimen>
 
+    <dimen name="padding_3dp">3dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <dimen name="padding_10dp">10dp</dimen>
 
