@@ -10,7 +10,9 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
+import ir.SoudehTouraji.skilleducationstore.R
 
 
 open class BaseActivity : AppCompatActivity() {
@@ -70,5 +72,8 @@ open class BaseActivity : AppCompatActivity() {
     fun changActivity(cls: Class<*>?){
         val intent = Intent(applicationContext, cls)
         startActivity(intent)
+    }
+    fun changeFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().replace(R.id.fl_content,fragment).commit()
     }
 }
