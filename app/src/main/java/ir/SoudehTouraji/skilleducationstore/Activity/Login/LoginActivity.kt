@@ -5,6 +5,7 @@ import android.os.Bundle
 import ir.SoudehTouraji.skilleducationstore.Activity.Main.MainActivity
 import ir.SoudehTouraji.skilleducationstore.Activity.SignUp.SignUpActivity
 import ir.SoudehTouraji.skilleducationstore.Components.BaseActivity
+import ir.SoudehTouraji.skilleducationstore.Components.SPClass
 import ir.SoudehTouraji.skilleducationstore.Dialog.NoInternet.NoInternetActivity
 import ir.SoudehTouraji.skilleducationstore.databinding.ActivityLoginBinding
 import kotlin.text.toRegex as toRegex
@@ -14,6 +15,7 @@ class LoginActivity : BaseActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var email: String
     private lateinit var password: String
+    private lateinit var sp:SPClass
 
     // email pattern example S.touraji66@gmail.com
     private val emailPattern: String = "[a-zA-Z0-9.-_]+@[a-z]+\\.+[a-z]+"
@@ -25,6 +27,7 @@ class LoginActivity : BaseActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        sp= SPClass(context)
         binding.btnLogin.setOnClickListener {
             if (checkNetwork()) {
                 // go to login
@@ -46,6 +49,7 @@ class LoginActivity : BaseActivity() {
             getPassword()
             if (checkPassword()) {
                 // true you can send request to server
+                sp.saveBoolean(sp.USER_LOGIN,true)
                 showToastLong("اطلاعات صحیح وارد شده است.")
                 changActivity(MainActivity::class.java)
             }

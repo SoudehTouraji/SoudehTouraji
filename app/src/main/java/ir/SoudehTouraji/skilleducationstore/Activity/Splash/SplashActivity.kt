@@ -7,7 +7,9 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.bumptech.glide.Glide
 import ir.SoudehTouraji.skilleducationstore.Activity.Login.LoginActivity
+import ir.SoudehTouraji.skilleducationstore.Activity.Main.MainActivity
 import ir.SoudehTouraji.skilleducationstore.Components.BaseActivity
+import ir.SoudehTouraji.skilleducationstore.Components.SPClass
 import ir.SoudehTouraji.skilleducationstore.Dialog.NoInternet.NoInternetActivity
 import ir.SoudehTouraji.skilleducationstore.R
 import ir.SoudehTouraji.skilleducationstore.databinding.ActivitySplashBinding
@@ -18,10 +20,12 @@ class SplashActivity : BaseActivity() {
     private lateinit var anim: Animation
     private lateinit var context: Context
     private val TIME_OUT: Long = 6000
+    private lateinit var sp: SPClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding()
         context = this
+        sp = SPClass(context)
         defineAnimation()
         setLogo()
         setAnimation()
@@ -37,8 +41,15 @@ class SplashActivity : BaseActivity() {
     fun showSplash() {
         Handler().postDelayed({
             if (checkNetwork()) {
-                // go to login
-                changActivity(LoginActivity::class.java)
+                // check user login or not?
+                if (sp.getBoolean(sp.USER_LOGIN) == true) {
+                    // if true -> go to mainActivity
+                    changActivity(MainActivity::class.java)
+                }
+                else{
+                    // if false -> go to loginActivity
+                    changActivity(LoginActivity::class.java)
+                }
                 finish()
             } else {
                 //show no internet dialog
