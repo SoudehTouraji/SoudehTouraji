@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="font_10sp">10sp</dimen>
     <dimen name="font_13sp">13sp</dimen>
     <dimen name="font_16sp">16sp</dimen>
     <dimen name="font_30sp">30sp</dimen>
@@ -7,6 +8,7 @@
     <dimen name="padding_3dp">3dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
 
     <dimen name="margin_25dp">25dp</dimen>
     <dimen name="margin_50dp">50dp</dimen>

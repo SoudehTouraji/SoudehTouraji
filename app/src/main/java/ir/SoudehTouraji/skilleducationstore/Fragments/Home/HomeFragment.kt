@@ -11,7 +11,7 @@ import ir.SoudehTouraji.skilleducationstore.R
 import ir.SoudehTouraji.skilleducationstore.databinding.FragmentHomeBinding
 
 class HomeFragment:Fragment() {
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding:FragmentHomeBinding
     private val imageList = ArrayList<SlideModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
